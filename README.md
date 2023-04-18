@@ -18,4 +18,4 @@ Link da API consumida: https://api.open5e.com/spells
 
 ![Imagem do plano](images/primeiroprint.png)
 ![Imagem do plano](images/segundoprint.png)
-![Imagem do plano](images/terceiroprint.png.png)
+![Imagem do plano](images/terceiroprint.png)
