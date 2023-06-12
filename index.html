@@ -31,12 +31,21 @@
             <img src="images/transmutation.PNG" alt="Transmutation Spell">
 		</div>
 	</div>
-	<div class="search-container">
-		<input type="text" id="spell-name" placeholder="Digite o nome da magia">
-		<button id="search-button">Buscar</button>
-	</div>
-	<div id="spell-results"></div>
+	<div class="container">
+		<div class="search-container">
+		  <input type="text" id="spell-name" placeholder="Digite o nome da magia">
+		  <button id="search-button">Buscar</button>
+		</div>
+	
+		<div class="search-container">
+		  <label for="school-select">...ou escolha por Escola: </label>	  
+		</div>
 
-      
+		<div class="search-container">
+			<select id="school-select"></select>
+		</div>
+
+		<div id="spell-results"></div>
+	  </div>
 </body>
 </html>
