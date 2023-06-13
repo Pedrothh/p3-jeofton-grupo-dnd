@@ -49,6 +49,7 @@ $(document).ready(() => {
 				}
 			});
 			var selectElement = $("#school-select");
+				selectElement.append($("<option value='' selected>Selecione uma opção</option>"));
 			Object.keys(schoolsMap).forEach(function(school) {
 				selectElement.append($("<option>").val(school).text(school));
 			});

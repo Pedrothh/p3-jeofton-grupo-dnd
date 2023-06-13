@@ -16,6 +16,6 @@ O consumo de API para D&D 5e pode trazer inúmeras vantagens para os jogadores, 
 
 Link da API consumida: https://api.open5e.com/spells
 
-![Imagem do plano](images/primeiroprint.png)
-![Imagem do plano](images/segundoprint.png)
-![Imagem do plano](images/terceiroprint.png)
+![Imagem do plano](img/primeiroprint.png)
+![Imagem do plano](img/segundoprint.png)
+![Imagem do plano](img/terceiroprint.png)
