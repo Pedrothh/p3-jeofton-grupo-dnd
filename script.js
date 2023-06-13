@@ -1,14 +1,18 @@
 var apiUrl = "https://api.open5e.com/spells";
 
-$(document).ready(function() {
-	$('.carousel').slick({
-		arrows: true,
-		prevArrow: '<button type="button" class="slick-prev">&#8249;</button>',
-		nextArrow: '<button type="button" class="slick-next">&#8250;</button>',
-		autoplay: true,
-		autoplaySpeed: 1000
-	});
+$(document).ready(() => {
+	
+	// Expanding Cards
+	$('.panel').click(function() {
+		removeActiveClasses();
+		$(this).addClass('active');
+	  });
+	  
+	  function removeActiveClasses() {
+		$('.panel').removeClass('active');
+	  };
 
+	// Search spell by name
 	$('#search-button').click(function() {
 		let spellName = $('#spell-name').val();
 		if (spellName !== '') {
@@ -34,6 +38,7 @@ $(document).ready(function() {
 		}
 	});
 
+	// Dropdown Spells Schools
 	$.getJSON(apiUrl, function(data) {
 		if (data.results) {
 			var schoolsMap = {};
@@ -50,7 +55,7 @@ $(document).ready(function() {
 		}
 	});
 	
-
+	// Search spell by School
 	$("#school-select").change(function() {
 		var selectedSchool = $(this).val();
 		if (selectedSchool !== '') {
